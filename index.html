@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="style.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Notifications page</title>
+
+</head>
+<body>
+  <div id="mainContainer">
+    <div id="headerContainer">
+      <div id="mainHeading">
+        <h1 id="myH1">Notifications <span id="notificationsNums">3</span></h1>
+      </div>
+      <p id="markAsRead" onclick="markAsRaid()">Mark all as read</p>
+    </div>
+    <div class="notificationItem" id="notification1">
+      <img class="userImage" src="assets/images/avatar-mark-webber.webp" alt="Mark Webber">
+      <div class="notificationDetails">
+        <div class="flex" >
+          <p class="actionDetails">
+            <span class="userName">Mark Webber</span>
+            <span class="userAction">reacted to your recent post</span>
+            <span class="postName">My first tournament today!</span>
+            <span class="unreadIcon" id="unreadIcon1"></span>
+          </p>
+          
+        </div>
+        <p class="actionTime">1m ago</p>
+      </div>
+    </div>
+    <div class="notificationItem" id="notification2">
+      <img class="userImage" src="assets/images/avatar-angela-gray.webp" alt="Angela Gray">
+      <div class="notificationDetails">
+        <div class="flex" >
+          <p class="actionDetails">
+            <span class="userName">Angela Gray</span>
+            <span class="userAction">followed you</span>
+            <span class="unreadIcon" id="unreadIcon2"></span>
+          </p> 
+        </div>
+        <p class="actionTime">5m ago</p>
+      </div>
+    </div>
+    <div class="notificationItem" id="notification3">
+      <img class="userImage" src="assets/images/avatar-jacob-thompson.webp" alt="Jacob Thompson">
+      <div class="notificationDetails">
+        <div class="flex" >
+          <p class="actionDetails">
+            <span class="userName">Jacob Thompson</span>
+            <span class="userAction">has joined your group</span>
+            <span class="groupName">Chess Club</span>
+            <span class="unreadIcon" id="unreadIcon3"></span>
+          </p> 
+        
+        </div>
+        <p class="actionTime">1 day ago</p>
+      </div>
+    </div>
+    <div class="notificationItem" id="notification4">
+      <img class="userImage" src="assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin">
+      <div class="notificationDetails">
+        <p class="actionDetails">
+          <span class="userName">Rizky Hasanuddin</span>
+          <span class="userAction">sent you a private message</span>
+        </p>
+        <p class="actionTime">5 days ago</p>
+      </div>
+    </div>
+    <p id="massege">
+      Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+      I'm already having lots of fun and improving my game.
+    </p>
+    <div class="notificationItem" id="notification5">
+      <img class="userImage" src="assets/images/avatar-kimberly-smith.webp" alt="Kimberly Smith">
+      <div class="notificationDetails">
+        <p class="actionDetails">
+          <span class="userName">Kimberly Smith</span>
+          <span class="userAction">commented on your picture</span>
+        </p>  
+        <p class="actionTime">1 week ago</p>
+      </div>
+      <img id="commentedImage" src="assets/images/image-chess.webp" alt="image-chess">
+    </div>
+    <div class="notificationItem" id="notification6">
+      <img class="userImage" src="assets/images/avatar-nathan-peterson.webp" alt="Nathan Peterson">
+      <div class="notificationDetails">
+        <p class="actionDetails">
+          <span class="userName">Nathan Peterson</span>
+          <span class="userAction">reacted to your recent post</span>
+          <span class="postName">5 end-game strategies to increase your win rate</span>
+        </p>  
+        <p class="actionTime">2 weeks ago</p>
+      </div>
+    </div>
+    <div class="notificationItem" id="notification7">
+      <img class="userImage" src="assets/images/avatar-anna-kim.webp" alt="Anna Kim">
+      <div class="notificationDetails">
+        <p class="actionDetails">
+          <span class="userName">Anna Kim</span>
+          <span class="userAction">left the group</span>
+          <span class="groupName">Chess Club</span>
+        </p> 
+        <p class="actionTime">2 weeks ago</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

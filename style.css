@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: hsl(210, 60%, 98%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mainContainer {
+    margin-top: 4.5%;
+    margin-bottom: 7%;
+    width: 50.5%;
+    border-radius: 3%;
+    padding: 2.5% 2% .8% 2%;
+    background-color: hsl(0, 0%, 100%);
+}
+#headerContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.1vw; 
+    align-items: center;
+}
+#myH1{
+    width: 20vw;
+    font-size: 1.8vw;
+    color: hsl(224, 21%, 14%);
+    font-weight: 800;
+}
+#notificationsNums{
+    background-color: hsl(219, 85%, 26%);
+    color: hsl(0, 0%, 100%);
+    font-size:1.2vw ;
+    padding: 1% 5%;
+    font-weight: 500;
+    border-radius: .65vw;
+    margin-left:.6vw ;
+}
+#markAsRead {
+    color: hsl(219, 12%, 42%);
+    font-size: 1.2vw;
+}
+#markAsRead:hover {
+    cursor: pointer;
+    color: hsl(219, 85%, 26%);
+}
+.notificationItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: .75vw;
+    padding: .9vw 1.2vw;
+    border-radius: .7vw;
+}
+.userName {
+    color: hsl(224, 21%, 14%);
+    font-weight: 800;
+}
+.userName:hover {
+    cursor: pointer;
+    color: hsl(219, 85%, 26%);
+}
+.userAction {
+    color: hsl(219, 12%, 42%);
+}
+.postName {
+    font-weight: 800;
+    color: hsl(219, 12%, 42%);
+}
+.postName:hover {
+    cursor: pointer;
+    color: hsl(219, 85%, 26%);
+}
+.groupName {
+    font-weight: 800;
+    color: hsl(219, 85%, 26%);
+    cursor: pointer;
+}
+.actionTime {
+    color: hsl(219, 12%, 42%);
+    margin-top: .3vw;
+    
+}
+.userImage {
+    width: 3.5vw;
+    margin-right: 1.4vw;
+}
+#massege {
+    padding: 1.2vw 1.3vw;
+    border-style: solid;
+    border-width: .005vw;
+    border-color: hsl(219, 14%, 63%);
+    width: 83%;
+    color: hsl(219, 12%, 42%);
+    margin-left: 13%;
+    border-radius: .55vw;
+    margin-bottom: 2vw;
+}
+#massege:hover {
+    cursor: pointer;
+    background-color: hsl(211, 68%, 94%);
+}
+#notification4{
+    margin-bottom: 0;
+}
+#commentedImage {
+    width: 3.5vw;
+    margin-left: 29%;
+}
+#notification1 , #notification2, #notification3 {
+    background-color: hsl(210, 60%, 98%);
+}
+.unreadIcon {
+    display: inline-block;
+    width: .6vw;
+    height: .6vw;
+    
+    border-radius: 50%;
+    background-color: hsl(1, 90%, 64%);
+    margin-left: .4vw;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width:700px) {
+    #mainContainer {
+        margin-top: 0%;
+        margin-bottom: 0vw;
+        width: 100%;
+        border-radius: 0%;
+        padding: 5% 3.6% 5% 3.6%;
+        height: 100%;
+    }
+    #headerContainer {
+        margin-bottom: 5vw; 
+        align-items: flex-end;
+    }
+    #myH1{
+        width: 50vw;
+        font-size: 5.3vw;
+    }
+    #notificationsNums{
+        font-size:4.2vw ;
+        padding: 1% 7%;
+        border-radius: 1.5vw;
+        margin-left:1.5vw ;
+    }
+    #markAsRead {
+        color: hsl(219, 12%, 42%);
+        font-size: 4vw;
+    }
+    .notificationItem {
+        margin-bottom: 2.5vw;
+        padding: 4vw 3.5vw;
+        border-radius: 2.5vw;
+        align-items: flex-start;
+        font-size: 4vw;
+    }
+    .actionTime {
+        color: hsl(219, 12%, 42%);
+        margin-top: .3vw;
+        
+    }
+    .userImage {
+        width: 10vw;
+        margin-right: 2.8vw;
+    }
+    .unreadIcon {
+        display: inline-block;
+        width: 2vw;
+        height: 2vw;
+        border-radius: 50%;
+        margin-left: 1.2vw;
+    }
+    .flex {
+        display: flex;
+        align-items: center;
+    }
+    #commentedImage {
+        width: 10vw;
+        margin-left: 10%;
+    }
+
+}
